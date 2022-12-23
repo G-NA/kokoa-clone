@@ -1,0 +1,43 @@
+.nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9fa;
+    padding: 20px 40px;
+    box-sizing: border-box; /*padding 으로 인해 객체의 크기가 증가한 것을 상쇄한다.*/
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link{
+    position: relative;
+    color: #2e363e;
+}
+
+.nav__noti_chat{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;/*width 값의 절반으로 설정하면 원형이 된다.*/
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute; /* 부모들 중, relative를 가진 가장 가까운 부모 기준으로 위치 설정 */
+    left: 20px;
+    bottom: 20px;
+}
+
+.nav__noti_dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: tomato;
+    position: absolute;
+    left: 30px;
+}
