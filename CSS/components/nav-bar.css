@@ -19,25 +19,8 @@
 }
 
 .nav__noti_chat{
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;/*width 값의 절반으로 설정하면 원형이 된다.*/
-    background-color: tomato;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 600;
     position: absolute; /* 부모들 중, relative를 가진 가장 가까운 부모 기준으로 위치 설정 */
     left: 20px;
     bottom: 20px;
 }
 
-.nav__noti_dot{
-    width: 5px;
-    height: 5px;
-    border-radius: 2.5px;
-    background-color: tomato;
-    position: absolute;
-    left: 30px;
-}
