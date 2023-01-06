@@ -38,7 +38,7 @@
     flex-direction: column;
     align-items: center;
 
-    animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s linear;
 }
 
 .chat__timestamp{
@@ -48,6 +48,8 @@
     margin-bottom: 40px;
     font-size: 14px;
     border-radius: 25px;
+    
+    transition: all 0.3s ease-in-out; /**/
 }
 
 .message-row{
@@ -162,3 +164,17 @@
     opacity: 1;
 }
 
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button{
+    transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within input{
+    width: 98vw;
+    transform: translateX(-13%) translateY(-80px);
+}
+
+.reply:focus-within{
+    transform: translateY(80px);
+}
