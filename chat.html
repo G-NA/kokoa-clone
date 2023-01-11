@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="CSS/style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chat - KoKoaTalk</title>
-    </head>
-    <body id="chat-screen">
-        <div class="status-bar">
-            <div class="status-bar__column">
-                <span>No Service</span>
-                <i class="fas fa-wifi"></i>
-            </div>
-            <div class="status-bar__column">
-                <span>18:43</span>
-            </div>
-            <div class="status-bar__column">
-                <span>110%</span>
-                <i class="fas fa-battery-full fa-lg"></i>
-                <i class="fas fa-bolt"></i>
-            </div>
+  <head>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - KoKoaTalk</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Minji</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, January, 2022</div>
+
+      <div class="message-row">
+        <img
+          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MjBfMjQz%2FMDAxNjYzNjc0Mzg5MjQz.qiO39jc0ALF7G4krhqSeNbVqkjwKgZbORPeT4EkD5UUg.6i0BJ8kiAv_kYb4vqUhR3BbBhHATBH7Ch34jeh4qqFQg.JPEG.gopsdfg4589%2F20220920_204607.jpg&type=a340"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Minji</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi, Jinha! Do you have a time?</span>
+            <span class="message__time">16:12</span>
+          </div>
         </div>
-       
-        <header class="alt-header">
-            <div class="alt-header__column">
-                <a href="chats.html">
-                    <i class="fas fa-angle-left fa-2x"></i>
-                </a>
-            </div>
-            <div class="alt-header__column">
-                <h1 class="alt-header__title">Minji</h1>
-            </div>
-            <div class="alt-header__column">
-                <span><i class="fas fa-search fa-lg"></i></span>
-                <span><i class=" fas fa-bars"></i></span>
-            </div>
-        </header>
+      </div>
 
-        <main class="main-screen main-chat">
-           <div class="chat__timestamp">
-                Tuesday, January, 2022 
-           </div>
-
-           <div class="message-row">
-                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MjBfMjQz%2FMDAxNjYzNjc0Mzg5MjQz.qiO39jc0ALF7G4krhqSeNbVqkjwKgZbORPeT4EkD5UUg.6i0BJ8kiAv_kYb4vqUhR3BbBhHATBH7Ch34jeh4qqFQg.JPEG.gopsdfg4589%2F20220920_204607.jpg&type=a340"/>
-                <div class="message-row__content">
-                    <span class="message__author">Minji</span>
-                    <div class="message__info">
-                        <span class="message__bubble">Hi, Jinha! Do you have a time?</span>
-                        <span class="message__time">16:12</span>
-                    </div>
-                </div>
-           </div>
-
-           <div class="message-row message-row--own">
-                <div class="message-row__content">
-                    <div class="message__info">
-                        <span class="message__bubble">Hi Minji! What's going on?</span>
-                        <span class="message__time">16:12</span>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <form class="reply">
-            <div class="reply__column">
-                <i class="far fa-plus-square fa-lg"></i>
-            </div>
-            <div class="reply__column">
-                <input type="text" placeholder=" Write message here...."/>
-                <i class="far fa-smile-wink fa-lg"></i>
-                <button>
-                    <i class="fas fa-arrow-up"></i>
-                </button>
-            </div>
-        </form>
-
-        <div id="no-mobile">
-            <span>This site is suitable for mobile use.</span>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi Minji! What's going on?</span>
+            <span class="message__time">16:12</span>
+          </div>
         </div>
+      </div>
+    </main>
 
-        <script
-            src="https://kit.fontawesome.com/6478f529f2.js"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder=" Write message here...." />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span
+        >This site is suitable for mobile use. Please reduce the screen
+        size</span
+      >
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
